@@ -1,0 +1,226 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  font-family: georgia, serif;
+}
+
+body {
+  background-image: url('../img/banner.jpg');
+  background-repeat:no-repeat;
+  background-position: top center;
+  background-size: 200%;
+
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 61.25em){
+
+  body {
+    background-size: 140%;
+  }
+}
+
+@media only screen and (min-width: 80em){
+  body{
+    background-size: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 124em){
+  body {
+    background-size: 100%;
+  }
+}
+
+
+/*------------------------------------------------------------------------LOGO*/
+
+.flex {
+  margin: -1rem 0 0 0;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex img {
+  width: 200px;
+}
+
+@media only screen and (min-width: 90em){
+  .flex img {
+    width: 300px;
+  }
+}
+
+/*----------------------------------------------------------------------HEADER*/
+
+header {
+  background-color: #cccccc;
+
+  padding: 2rem .5rem 1rem .5rem;
+  margin: -1.5rem 0 0 0;
+}
+
+h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+
+  margin: -1rem 0 0 0;
+}
+
+.sub {
+  font-style: italic;
+
+  margin: 0rem 0 0 0;
+}
+
+
+@media only screen and (min-width: 25em){
+
+  header {
+    margin: 2rem 0 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 34em){
+
+  header {
+    margin: 10rem 0 0 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .sub {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 46em){
+
+  header {
+    margin: 15rem 0 0 0 ;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+
+    padding: 0 0 0 1rem;
+  }
+
+  .sub {
+    font-size: 2rem;
+
+    padding: 0 0 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 61.25em){
+
+  header {
+    margin: 17rem 0 0 0;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .sub {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width: 80em){
+  header {
+    margin: 8rem 0 0 0;
+  }
+}
+
+
+
+/*-----------------------------------------------------------------------BLURB*/
+
+.desc {
+  padding: .5rem;
+}
+
+@media only screen and (min-width: 46em){
+  .desc {
+    font-size: 1.2rem;
+
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width:61.25em){
+  .desc{
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 90em){
+  .desc{
+    font-size: 2rem;
+
+    padding:  0rem 5rem 1rem 8rem;
+  }
+}
+
+
+/*----------------------------------------------------------------------FOOTER*/
+
+footer {
+  background-color: #333;
+
+  padding: .75rem;
+
+  bottom: 0;
+  position: absolute;
+
+  width: 100%;
+}
+
+.social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  margin: 0 .5rem 0 -5rem;
+
+}
+
+.social li {
+  list-style-type: none;
+
+  margin: 0 0 0 1rem;
+}
+
+.social img {
+  width: 50px;
+}
+
+.social a:hover,
+.social a:active,
+.social a:focus {
+  opacity: .4;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 90em){
+  .social img {
+    width: 75px;
+  }
+}
