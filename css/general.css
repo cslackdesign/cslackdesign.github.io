@@ -32,10 +32,17 @@ body {
   }
 }
 
+@media only screen and (min-width: 70em ){
+  body {
+    background-size: 100%;
+  }
+}
+
+
 /*---------------------------------------------------------------------ARTICLE*/
 
 article {
-  margin: 0 0 8rem 0;
+  margin: 0 0 4rem 0;
 }
 
 
@@ -69,6 +76,23 @@ header img{
   header img {
     margin: 5rem .5rem 5rem .5rem;
   }
+}
+
+@media only screen and (min-width: 70em){
+
+  header img {
+    margin: 5rem .5rem 4rem .5rem;
+
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 80em){
+
+  header img {
+    width: 70%;
+  }
+
 }
 
 
@@ -119,8 +143,9 @@ header img{
 
 /*----------------------------------------------------------------------SCROLL*/
 
-.scroll {
+.scroll-down {
   width: 50%;
+
 }
 
 .flex {
@@ -132,9 +157,19 @@ header img{
 
 }
 
+.scroll {
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+
 @media only screen and (min-width: 63em){
-  .scroll {
+  .scroll-down {
     width: 40%;
+
   }
 }
 
@@ -172,6 +207,12 @@ header img{
 
 @media only screen and (min-width: 63em){
 
+  .work-header img {
+    width: 40%;
+
+    margin : 0 0 .5rem 0;
+  }
+
   .work-list img {
     width: 100%;
   }
@@ -183,4 +224,14 @@ display: -webkit-flex;
     -webkit-align-content: center;
     align-content: center;
   }
+}
+
+@media only screen and (min-width: 80em){
+  .work-header img {
+    width: 30%;
+}
+    .work-list {
+      padding: 0 24rem 0 24rem;
+
+    }
 }
