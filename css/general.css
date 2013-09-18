@@ -9,15 +9,34 @@ html {
 }
 
 body {
-  background-image: url('../img/background-image.jpg');
+  background:transparent url('../img/background-image.jpg') fixed;
   background-repeat:no-repeat;
-  background-position: top left;
   background-size: 800%;
 
   margin: 0;
   padding: 0;
 }
 
+@media only screen and (min-width: 25em){
+
+  body{
+    background-size: 400%;
+  }
+
+}
+
+@media only screen and (min-width: 63em){
+
+  body {
+    background-size: 150%;
+  }
+}
+
+/*---------------------------------------------------------------------ARTICLE*/
+
+article {
+  margin: 0 0 8rem 0;
+}
 
 
 /*----------------------------------------------------------------------HEADER*/
@@ -28,10 +47,34 @@ header img{
   margin: 1rem 0 0 0;
 }
 
+@media only screen and (min-width: 25em){
+
+  header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  header img {
+    width: 90%;
+
+    margin: 2rem .5rem 2rem .5rem;
+
+  }
+}
+
+@media only screen and (min-width: 63em){
+
+  header img {
+    margin: 5rem .5rem 5rem .5rem;
+  }
+}
+
 
 /*------------------------------------------------------------------SOCIAL NAV*/
 
-nav {
+.social {
 
   padding: .75rem;
 
@@ -68,13 +111,38 @@ nav {
   transition:all 0.3s ease-in-out;
 }
 
+@media only screen and (min-width: 63em){
+  .social img {
+    width: 60px;
+  }
+}
+
 /*----------------------------------------------------------------------SCROLL*/
 
 .scroll {
-  width: 100%;
+  width: 50%;
+}
+
+.flex {
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+
+@media only screen and (min-width: 63em){
+  .scroll {
+    width: 40%;
+  }
 }
 
 /*------------------------------------------------------------------------WORK*/
+
+.work-header img {
+  width: 80%;
+}
 
 .work-list img {
   width: 100%;
@@ -83,19 +151,14 @@ nav {
 .work-list {
   list-style-type: none;
 
-  display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
 
     margin: 0 2rem 0 0;
 
 }
 
 .work-list li {
-  padding: 0 0 .5rem 0;
+  padding: 0 .5rem .5rem .5rem;
+
 }
 
 .work-list a:hover,
@@ -105,4 +168,19 @@ nav {
 
   -webkit-transition:all 0.3s ease-in-out;
   transition:all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 63em){
+
+  .work-list img {
+    width: 100%;
+  }
+
+  .work-list {
+
+display: -webkit-flex;
+    display: flex;
+    -webkit-align-content: center;
+    align-content: center;
+  }
 }
