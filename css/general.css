@@ -9,9 +9,10 @@ html {
 }
 
 body {
-  background-image: url('../img/banner.jpg');
+  background-image: url('../img/background-image.jpg');
   background-repeat:no-repeat;
   background-position: top left;
+  background-size: 800%;
 
   margin: 0;
   padding: 0;
@@ -19,63 +20,21 @@ body {
 
 
 
-/*------------------------------------------------------------------------LOGO*/
-
-.flex {
-  margin: 1rem 0 0 0;
-
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.flex img {
-  width: 100px;
-}
-
-
 /*----------------------------------------------------------------------HEADER*/
 
-header {
-  background-color: #cccccc;
+header img{
+  width: 100%;
 
-  padding: 2rem .5rem 1rem .5rem;
   margin: 1rem 0 0 0;
 }
 
-h1 {
-  font-family: Oswald, sans-serif;
-  font-size: 2rem;
 
-  margin: -1rem 0 0 0;
-}
+/*------------------------------------------------------------------SOCIAL NAV*/
 
-.sub {
-  font-style: italic;
-
-  margin: 0rem 0 0 0;
-}
-
-/*-----------------------------------------------------------------------BLURB*/
-
-.desc {
-  padding: .5rem;
-  background-color: #000;
-  color: #ccc;
-
-  line-height: 1.4rem;
-}
-
-/*----------------------------------------------------------------------FOOTER*/
-
-footer {
-  background-color: #333;
+nav {
 
   padding: .75rem;
 
-  bottom: 0;
-  position: absolute;
 
   width: 100%;
 }
@@ -86,7 +45,7 @@ footer {
   -webkit-justify-content: center;
   justify-content: center;
 
-  margin: 0 .5rem 0 -5rem;
+  margin: 0 0 0 -.7rem;
 
 }
 
@@ -103,6 +62,45 @@ footer {
 .social a:hover,
 .social a:active,
 .social a:focus {
+  opacity: .4;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+/*----------------------------------------------------------------------SCROLL*/
+
+.scroll {
+  width: 100%;
+}
+
+/*------------------------------------------------------------------------WORK*/
+
+.work-list img {
+  width: 100%;
+}
+
+.work-list {
+  list-style-type: none;
+
+  display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+
+    margin: 0 2rem 0 0;
+
+}
+
+.work-list li {
+  padding: 0 0 .5rem 0;
+}
+
+.work-list a:hover,
+.work-list a:active,
+.work-list a:focus {
   opacity: .4;
 
   -webkit-transition:all 0.3s ease-in-out;
