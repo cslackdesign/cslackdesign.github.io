@@ -241,3 +241,13 @@ display: -webkit-flex;
 
     }
 }
+
+footer {
+  background-color: #333333;
+  bottom: 0;
+
+  margin:0;
+  padding: 1rem;
+
+  color: #cccccc;
+}
