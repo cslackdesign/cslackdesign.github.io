@@ -2,7 +2,7 @@
 <html lang=en-ca>
 <head>
   <meta charset=utf-8>
-  <title>SLACKER</title>
+  <title>{{page.title}} - SLACKER</title>
 
   <link href="css/general.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
@@ -16,6 +16,16 @@
 
 </head>
 <body>
+
+  <a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
+
+  <nav class="nav nav-top" data-state="collapsed">
+    <ul>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Quote</a></li>
+    </ul>
+  </nav>
 
 {{content}}
 
