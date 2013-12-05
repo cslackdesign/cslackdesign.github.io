@@ -2,39 +2,59 @@
 <html lang=en-ca>
 <head>
   <meta charset=utf-8>
-  <title>{{page.title}} - SLACKER</title>
+  <title>CSLACK DESIGN</title>
 
-  <link href="css/general.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
+   <!--Mobile Optimization -->
 
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!--Mobile Optimization -->
+  <!--CSS-->
 
-<meta name="handheldfriendly" content="true">
-<meta name="mobileoptimized" content="240">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="{{site.baseurl}}/css/shopify-app.css" rel="stylesheet">
 
+  <!--FONT-->
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body id="top">
 
-{{content}}
+  <header>
 
-<footer>
-  <p>@CSlack Design 2013</p>
-</footer>
+    <!--Nav-->
 
-<script src="js/smooth-scroll.js"></script>
+    <a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
+    <nav class="nav nav-top" data-state="collapsed">
+      <ul>
+        <li><a href="#top">HOME</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
 
+  </header>
 
+  {{content}}
 
+  <footer>
+    <p>©CSLACK DESIGN 2013</p>
+    <a href="#top">Back to top</a>
+  </footer>
 
+  <!--SCRIPTS-->
 
+  <script src="{{site.baseurl}}/js/footer-toggle-hybrid.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="{{site.baseurl}}/js/work-div.js"></script>
+  <script src="{{site.baseurl}}/js/jquery.smooth-scroll.min.js"></script>
 
-
-
-
+  <script>
+    $(document).ready(function () {
+      $('.nav-top a').smoothScroll();
+    });
+  </script>
 
 </body>
 </html>
