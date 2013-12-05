@@ -26,52 +26,6 @@ title: HOME
 
 <article class="work">
 
-  <div class="work-header">
-    <img id="smooth" src="img/work-header.png" alt="Work">
-  </div>
-
-  <h2>WEB</h2>
-
-  <ul class="work-list">
-    {% for work in site.pages %}
-      {% if work.category =="web" %}
-    <li><img src="img/{{work.thumb}}" alt=""></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-
-  <h2>PRINT</h2>
-
-  <ul class="work-list">
-    {% for work in site.pages %}
-      {% if work.category =="print" %}
-    <li><img src="img/{{work.thumb}}" alt=""></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-
-  <h2>BRANDING</h2>
-
-  <ul class="work-list">
-    {% for work in site.pages %}
-      {% if work.category =="branding" %}
-    <li><img src="img/{{work.thumb}}" alt=""></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-
-  <h2>MOTION</h2>
-
-  <ul class="work-list">
-    {% for work in site.pages %}
-      {% if work.category =="motion" %}
-    <li><img src="img/{{work.thumb}}" alt=""></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-
-
-
 
 
 </article>
