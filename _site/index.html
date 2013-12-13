@@ -1,8 +1,42 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang=en-ca>
+<head>
+  <meta charset=utf-8>
+  <title>CSLACK DESIGN</title>
 
-<div id="greet">
+   <!--Mobile Optimization -->
+
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!--CSS-->
+
+  <link href="/css/shopify-app.css" rel="stylesheet">
+
+  <!--FONT-->
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body id="top">
+
+  <header>
+
+    <!--Nav-->
+
+    <a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
+    <nav class="nav nav-top" data-state="collapsed">
+      <ul>
+        <li><a href="#top">HOME</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id="greet">
 
   <img class="flex-img-greet" src="img/greeting.png" alt="Hello Greg!">
 
@@ -300,3 +334,25 @@ layout: default
   </div>
 
 </div>
+
+
+  <footer>
+    <p>©CSLACK DESIGN 2013</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <!--SCRIPTS-->
+
+  <script src="/js/footer-toggle-hybrid.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="/js/work-div.js"></script>
+  <script src="/js/jquery.smooth-scroll.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.nav-top a').smoothScroll();
+    });
+  </script>
+
+</body>
+</html>
