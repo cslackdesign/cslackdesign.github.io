@@ -1,0 +1,243 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------HEADER*/
+
+header {
+  width: 100%;
+  top:0;
+  margin:0;
+  padding:0;
+  background-color: #333333;
+}
+
+/*------------------------------------------------------------------SOCIAL NAV*/
+
+.social-nav {
+  margin:0;
+  padding:10px;
+
+  text-align:center;
+}
+
+.social-nav li {
+  list-style-type: none;
+  display: inline-block;
+
+  margin: 5px;
+
+  width: 45px;
+  height:45px;
+}
+
+
+
+/*TWITTER*/
+
+#twitter {
+  background-image: url('../img/twitter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#twitter:hover {
+  background-image: url('../img/twitter-hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+/*BEHANCE*/
+
+#behance {
+  background-image: url('../img/behance.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#behance:hover {
+  background-image: url('../img/behance-hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+/*INSTAGRAM*/
+
+#instagram {
+  background-image: url('../img/instagram.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#instagram:hover {
+  background-image: url('../img/instagram-hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+/*GITHUB*/
+
+#github {
+  background-image: url('../img/github.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#github:hover {
+  background-image: url('../img/github-hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+/*----------------------------------------------------------------------SPLASH*/
+
+.splash {
+  background-image: url('../img/dark_wood_@2X.png');
+  background-position: 0 0;
+  background-size: 100%;
+  background-attachment: fixed;
+
+  width: 100%;
+  margin:0;
+  padding:20px;
+
+  text-align: center;
+  color: #fff;
+}
+
+.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 80%;
+}
+
+h1 {
+  font-style: bold;
+  font-size: 1.5rem;
+}
+
+.sub {
+  font-style:italic;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 30em){
+
+  .splash {
+    padding: 30px;
+  }
+
+  .profile {
+    width: 110px;
+    height: 110px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .sub {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 65em){
+
+  .splash {
+    padding: 40px;
+  }
+
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding:0;
+    margin:1.5rem;
+  }
+
+  .sub {
+    font-size: 2rem;
+    padding:0;
+    margin:1rem;
+  }
+}
+
+/*------------------------------------------------------------------------WORK*/
+
+.work {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 29em){
+  .work {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 65em){
+  .work {
+    width: 1450px;
+  }
+}
+
+.view-tenth:hover h2 {
+  color: #fff;
+  background-color: #f6482a;
+  border-right: 8px solid #f42d0a;
+  border-bottom: 8px solid #f42d0a;
+  padding: 5px;
+}
+
+.view-tenth:hover p {
+  color: #fff;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.view-tenth:hover a.info {
+  color: #f6482a;
+  text-decoration: none;
+}
+
+.view-tenth:hover a.info:hover {
+  color: #fff;
+  text-decoration: none;
+}
