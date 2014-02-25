@@ -133,11 +133,11 @@
 @media only screen and (min-width: 60em){
    .mask {
       width: 350px;
-      height: 240px;
+      height: 220px;
    }
    .view {
       width: 350px;
-      height: 240px;
+      height: 220px;
    }
 }
 
