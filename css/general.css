@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+body {
+    background-color: #333;
+    font-family: "roboto" , helvetica, sans-serif;
+}
+
 /*----------------------------------------------------------------------HEADER*/
 
 header {
@@ -21,7 +26,7 @@ header {
   top:0;
   margin:0;
   padding:0;
-  background-color: #333333;
+  background-color: #222222;
 }
 
 /*------------------------------------------------------------------SOCIAL NAV*/
@@ -60,8 +65,11 @@ header {
   background-position: center;
   background-size: 100%;
 
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 /*BEHANCE*/
@@ -79,8 +87,11 @@ header {
   background-position: center;
   background-size: 100%;
 
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 /*INSTAGRAM*/
@@ -98,8 +109,11 @@ header {
   background-position: center;
   background-size: 100%;
 
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 /*GITHUB*/
@@ -117,8 +131,11 @@ header {
   background-position: center;
   background-size: 100%;
 
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 /*----------------------------------------------------------------------SPLASH*/
@@ -126,7 +143,6 @@ header {
 .splash {
   background-image: url('../img/dark_wood_@2X.png');
   background-position: 0 0;
-  background-size: 100%;
   background-attachment: fixed;
 
   width: 100%;
@@ -134,7 +150,7 @@ header {
   padding:20px;
 
   text-align: center;
-  color: #fff;
+  color: #eeeeee;
 }
 
 .profile {
@@ -144,13 +160,16 @@ header {
 }
 
 h1 {
-  font-style: bold;
+  font-weight: 500;
   font-size: 1.5rem;
+  color: #eeeeee;
 }
 
 .sub {
   font-style:italic;
+  font-weight: 100;
   font-size: 1rem;
+  color: #eeeeee;
 }
 
 @media only screen and (min-width: 30em){
@@ -199,12 +218,15 @@ h1 {
 
 /*------------------------------------------------------------------------WORK*/
 
+
+
 .work {
   position: relative;
   overflow: hidden;
   width: 420px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 10px;
+
 }
 
 @media only screen and (min-width: 40em){
@@ -220,7 +242,7 @@ h1 {
 }
 
 .view-tenth:hover h2 {
-  color: #fff;
+  color: #eeeeee;
   background-color: #f6482a;
   border-right: 8px solid #f42d0a;
   border-bottom: 8px solid #f42d0a;
@@ -228,7 +250,7 @@ h1 {
 }
 
 .view-tenth:hover p {
-  color: #fff;
+  color: #eeeeee;
   font-style: italic;
   font-weight: lighter;
 }
@@ -239,7 +261,7 @@ h1 {
 }
 
 .view-tenth:hover a.info:hover {
-  color: #fff;
+  color: #eeeeee;
   text-decoration: none;
 }
 
@@ -250,36 +272,40 @@ h1 {
   display: block;
   overflow: hidden;
   text-align: center;
-  background-image: url('../img/dark_wood_@2X.png');
-  background-position: 0 0;
-  background-size: 100%;
+  background-color: #333;
+
 
 }
 
 .comments-title {
   width: 100%;
   top:0;
-  background-color: #333333;
+  background-color: #222222;
   padding: 5px;
   margin: 1px 0 10px 0;
+  text-align: center;
 }
 
 h4 {
-  color: #f1f1f1;
+  font-weight: 100;
+  color: #eeeeee;
   font-size: 2rem;
-  margin:40px 0 0 0;
+  margin: 20px 0 0;
   padding: 0;
 }
 
-.comments a {
+.comments-title a {
   color: #f6482a;
   padding:0;
 }
 
-.comments a:hover {
-  color: #fff;
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+.comments-title a:hover {
+  color: #eeeeee
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .tumblr_posts {
@@ -351,13 +377,13 @@ h4 {
 /*----------------------------------------------------------------------FOOTER*/
 
 footer {
-  background-color: #333333;
+  background-color: #191919;
   margin: 1rem 0 0;
   width: 100%;
 }
 
 nav {
-  background-color: #333;
+  background-color: #222222;
 }
 
 .footer {
